@@ -1,0 +1,76 @@
+/* ==========================================================================
+   LAVENDER THEME — LIGHT VERSION
+   A clean, calm, academic palette built around a soft lavender accent.
+   The lavender is used as an accent only (links, rules, active state); body
+   text and background stay neutral so contrast remains high.
+   ========================================================================== */
+
+/* ---- Core accent -------------------------------------------------------- */
+$lavender                  : #7c6aad;  // primary accent — links, rules, active state
+$lavender-dark             : #5f4f8c;  // hover / darker variant
+$lavender-darker           : #4a3d6e;  // visited / deepened
+$lavender-light            : #a99ed0;  // muted accent
+$lavender-lighter          : #ddd7ee;  // hairlines, tints
+$lavender-soft             : #f4f1fa;  // subtle tinted surfaces
+
+/* ---- Neutral scale (warm-neutral, not pure gray) ------------------------- */
+$ink                       : #3a3744;  // body text
+$ink-muted                 : #777086;  // secondary text
+$ink-light                 : #a39fae;  // tertiary / placeholder
+$ink-lighter               : #d8d4e0;  // hairlines
+$ink-soft                  : #ebe8f0;  // faint rules
+
+/* ---- Surface scale ------------------------------------------------------- */
+$paper                     : #ffffff;  // page background
+$paper-tint                : #fbfafd;  // secondary surface (sidebar, table header)
+$paper-soft                : #f6f4f9;  // code / inset surfaces
+$footer                    : #f2eff6;  // footer
+
+/* ---- Component role → theme color (deployment-time SASS vars) ------------ */
+$primary-color             : #{$lavender};
+$gray                      : #{$ink-muted};
+$dark-gray                 : #{$ink};
+$darker-gray               : #2c2a35;
+$light-gray                : #{$ink-light};
+$lighter-gray              : #{$ink-lighter};
+
+/* Color codes used for the site */
+$danger-color              : #c46a6a;
+$info-color                : #{$lavender};
+$notice-color              : #9a90ac;
+$success-color             : #5f9b7a;
+$warning-color             : #c6924a;
+
+/* Other basic settings for the template */
+$border-radius             : 4px;
+$box-shadow                : 0 1px 2px rgba(60, 50, 90, 0.06);
+$global-transition         : all 0.2s ease-in-out;
+$masthead-height           : 70px;
+$navicon-width             : 28px;
+$navicon-height            : 4px;
+$sidebar-link-max-width    : 250px;
+$sidebar-screen-min-width  : 1024px;
+
+/* Default light theme for the site */
+:root {
+    --global-base-color                 : #{$primary-color};
+    --global-bg-color                   : #{$paper};
+    --global-footer-bg-color            : #{$footer};
+    --global-border-color               : #{$ink-lighter};
+    --global-dark-border-color          : #{$ink-light};
+    --global-code-background-color      : #{$paper-soft};
+    --global-code-text-color            : #{$darker-gray};
+    --global-fig-caption-color          : #{$ink-muted};
+    --global-link-color                 : #{$lavender};
+    --global-link-color-hover           : #{$lavender-dark};
+    --global-link-color-visited         : #{$lavender-darker};
+    --global-masthead-link-color        : #{$ink};
+    --global-masthead-link-color-hover  : #{$lavender};
+    --global-text-color                 : #{$ink};
+    --global-text-color-light           : #{$ink-muted};
+    --global-thead-color                : #{$paper-tint};
+}
+
+footer {
+    color: #{$ink-muted};
+}
