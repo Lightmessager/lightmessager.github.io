@@ -23,7 +23,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/profiles.jpg"
+  avatar           : "/images/profiles.jpg"
   name             : "Yixuan Fan"
   pronouns         : # example: "she/her"  
   bio              : "UG working on using Gaussian in organometallics‌ study"
