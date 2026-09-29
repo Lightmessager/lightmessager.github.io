@@ -1,10 +1,8 @@
 ---
-layout: archive
+layout: single
 title: "About"
-permalink: /about/
-author_profile: false
-redirect_from:
-  - /about
+permalink: "/"          # 关键：根路径，About 就是首页
+author_profile: true
 ---
 
 {% include base_path %}
