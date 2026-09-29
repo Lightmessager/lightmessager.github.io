@@ -45,8 +45,8 @@ My broader interests lie in **materials and catalysis** — semiconductors, high
 
 * **Computational chemistry** — end-to-end Gaussian workflows for conventional molecules and coordination complexes: structure building, geometry optimisation, single-point energy calculations, transition-state construction and location, intermediate optimisation, and reaction-mechanism design.
 * **Tooling** — developed an **AI-assisted program for the batch extraction and processing of information from Gaussian log files**; basic exposure to **molecular dynamics simulations**. Currently developing a tool to write input files automatically and verify their correctness. The key purpose is to make everything visualised and more efficient.
-* **Theoretical foundation** — strongest in **Organic and Inorganic Chemistry**, with emphasis on **coordination chemistry and reaction mechanisms**; less experienced in laboratory organic synthesis. This is a deliberate direction, rather than a gap.
-* **Programming** — foundational command of **Python**; currently learning **C/C++**. I prefer to understand concepts through **mathematical derivation and first-principles reasoning** rather than rote memorisation. Actually I am watching videos with lots of animations and figures to get interested in.
+* **Theoretical foundation** — strongest in **Organic and Inorganic Chemistry**, with emphasis on **coordination chemistry and reaction mechanisms**.
+* **Programming** — foundational command of **Python**; currently learning **C/C++**. I prefer to understand concepts through **mathematical derivation and first-principles reasoning** rather than rote memorisation.
 
 ## Service and Leadership
 
@@ -60,12 +60,6 @@ My broader interests lie in **materials and catalysis** — semiconductors, high
 ## Language
 
 * **IELTS 7.0** — Listening 7.5, Reading 8.0, Speaking 6.0, Writing 6.5.
-
-## Selected Coursework Notes
-
-My academic record is uneven by design. I invest heavily in subjects aligned with my research direction, and acknowledge that courses outside that focus received less attention. I supplemented this gap by self-studying programming, multiple computational-chemistry software packages, and AI applications in chemistry, and found self-study consistently more effective than lecture-based learning for mathematically intensive material. So I am not satisfied with the result, and I can perform much better than it shows. And even more, I enjoy asking AI why, then using the answers to ask another why, making the learning deeper and deeper.
-
-*Updated: October 2026.*
 
 ## Referees
 
