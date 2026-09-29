@@ -22,7 +22,7 @@ redirect_from:
 
 I study the **free-energy changes of organometallic compounds during catalytic processes** using **density functional theory (DFT)** and **Gaussian**. My work covers the construction and location of transition states and intermediates, isomerisation where required, and mapping the most probable reaction landscape by comparing alternative pathways. The scope extends to diverse substrates, solvent environments, and catalyst ligands, to predict reaction outcomes and selectivity.
 
-My broader interests lie in **materials and catalysis** — semiconductors, high-performance plastics, modified metal alloys — with potential extension to biopharmaceutical applications. Actually it can be changed to be everything that can be used in better life experience.
+My broader interests lie in **materials and catalysis** — semiconductors, high-performance plastics, modified metal alloys — with potential extension to biopharmaceutical applications.
 
 ## Research Experience
 
