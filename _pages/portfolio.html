@@ -1,72 +1,29 @@
 ---
-title: "Portfolio"
-layout: archive
-permalink: /portfolio/
-redirect_from:
-  - /portfolio
+layout: single
+title: "Research"
+permalink: /research/
 author_profile: true
+redirect_from:
+  - /portfolio/
+  - /portfolio
 ---
 
-<style>
-.portfolio-intro {
-  font-size: 0.98em;
-  line-height: 1.7;
-  color: #555;
-  margin: 0 0 2em 0;
-}
-.portfolio-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.portfolio-list li {
-  padding: 1.6em 0;
-  border-bottom: 1px solid #e8e8e8;
-}
-.portfolio-list li:first-child { padding-top: 0.4em; }
-.portfolio-list li:last-child  { border-bottom: none; }
-.portfolio-list h3 {
-  margin: 0 0 0.25em 0;
-  font-size: 1.25em;
-}
-.portfolio-list h3 a { text-decoration: none; }
-.portfolio-list h3 a:hover { text-decoration: underline; }
-.portfolio-meta {
-  font-size: 0.85em;
-  color: #888;
-  margin: 0 0 0.6em 0;
-}
-.portfolio-meta span + span::before {
-  content: " · ";
-  margin: 0 0.2em;
-}
-.portfolio-excerpt {
-  font-size: 0.94em;
-  line-height: 1.65;
-  margin: 0;
-}
-.portfolio-excerpt a {
-  word-break: break-all;
-}
-</style>
+My research focuses on computational organometallic chemistry, particularly the construction and comparison of catalytic pathways. These project summaries describe my contributions without reporting unpublished structures or numerical results.
 
-<p class="portfolio-intro">
-A selection of my research and computational work, including two SURF projects,
-a tool I designed for processing Gaussian output, and my outreach work with
-the XJTLU Chemistry Society. Items are listed newest first.
-</p>
+## [Ni-Catalysed Five-Membered Cyclisation]({{ '/portfolio/surf-2025-26/' | relative_url }})
 
-<ul class="portfolio-list">
-{% assign sorted = site.portfolio | sort: "date" | reverse %}
-{% for post in sorted %}
-  <li>
-    <h3><a href="{{ post.permalink | relative_url }}">{{ post.title }}</a></h3>
-    <p class="portfolio-meta">
-      {% if post.date %}<span>{{ post.date | date: "%B %Y" }}</span>{% endif %}
-      {% if post.venue %}<span>{{ post.venue }}</span>{% endif %}
-      {% if post.location %}<span>{{ post.location }}</span>{% endif %}
-    </p>
-    {% if post.excerpt %}<p class="portfolio-excerpt">{{ post.excerpt }}</p>{% endif %}
-  </li>
-{% endfor %}
-</ul>
+**SURF 2025–26 · XJTLU**
+
+Transition-state searches for a five-membered cyclisation system, with particular attention to the coordination environment encountered during a difficult reductive-elimination search.
+
+[Read project →]({{ '/portfolio/surf-2025-26/' | relative_url }})
+
+## [Ni/Zn Reductive Cross-Electrophile Coupling]({{ '/portfolio/surf-2024-25/' | relative_url }})
+
+**SURF 2024–25 · XJTLU**
+
+DFT investigation of coupling between heteroaryl bromides and tertiary alkyl halides, comparing oxidative-addition, single-electron-transfer and concerted mechanistic proposals.
+
+[Read project →]({{ '/portfolio/surf-2024-25/' | relative_url }})
+
+For my computational tool, see [Software]({{ '/software/' | relative_url }}). Chemistry Society activities are summarised in my [CV]({{ '/cv/' | relative_url }}).
