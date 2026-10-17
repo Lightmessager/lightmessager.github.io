@@ -45,14 +45,14 @@ Contributed to a SURF project poster. [Available poster file]({{ '/files/poster_
 
 - **Electronic-structure calculations:** DFT; geometry optimisation; intermediate and transition-state searches; single-point energy calculations; energetic-cycle construction.
 - **Software:** Gaussian and computational-output post-processing.
-- **Programming:** foundational Python; currently learning C/C++.
+- **Programming:** foundational Python; currently learning Fortran.
 - **Additional exposure:** molecular dynamics simulations.
 
 ## Software and Tool Design
 
-**[Gaussian LogReader Pro]({{ '/portfolio/gaussian-log-reader-pro/' | relative_url }})**
+**[GaussianReadPro]({{ '/portfolio/gaussian-log-reader-pro/' | relative_url }})**
 
-Defined requirements, data layout and interaction design for a Gaussian output-processing application. Code implementation: Tencent Hy4preview.
+Defined requirements, data layout and interaction design for a Gaussian output-processing tool. The earlier Tkinter implementation was credited to Tencent Hy4preview; the current repository provides the Qt-based GaussianReadPro workbench.
 
 ## Leadership and Outreach
 
