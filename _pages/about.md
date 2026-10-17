@@ -30,8 +30,8 @@ I am interested in how coordination environments and ligand structures influence
 ### [Ni/Zn Reductive Cross-Electrophile Coupling]({{ '/portfolio/surf-2024-25/' | relative_url }})
 **SURF 2024–25** · Computational comparison of candidate pathways for coupling heteroaryl bromides with tertiary alkyl halides.
 
-### [Gaussian LogReader Pro]({{ '/portfolio/gaussian-log-reader-pro/' | relative_url }})
-**Scientific software** · A tool I designed for batch extraction and post-processing of Gaussian output, with implementation credited to Tencent Hy4preview.
+### [GaussianReadPro]({{ '/portfolio/gaussian-log-reader-pro/' | relative_url }})
+**Scientific software** · Local Gaussian-output analysis with explicit energy references and interactive 2D and 3D reaction profiles.
 
 [Research projects]({{ '/research/' | relative_url }}) · [Software]({{ '/software/' | relative_url }}) · [CV]({{ '/cv/' | relative_url }})
 
