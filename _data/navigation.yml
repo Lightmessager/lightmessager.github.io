@@ -1,9 +1,11 @@
-# Research Notes can be added once original articles are ready.
+# Blog posts live in _posts/ and appear in the year archive.
 main:
   - title: "Home"
     url: /
   - title: "Research"
     url: /research/
+  - title: "Blog"
+    url: /year-archive/
   - title: "Software"
     url: /software/
   - title: "Publications & Presentations"
