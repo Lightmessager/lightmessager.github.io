@@ -12,7 +12,7 @@ Xi'an Jiaotong-Liverpool University · Suzhou, China
 
 **DFT · Reaction Mechanisms · Transition States · Catalysis**
 
-I study organometallic catalytic mechanisms using density functional theory (DFT), with a focus on intermediates, transition states and competing reaction pathways. My research with Dr Xiaotai Wang has involved two Summer Undergraduate Research Fellowship (SURF) projects on nickel-mediated coupling and cyclisation.
+I study organometallic catalytic mechanisms using density functional theory (DFT), with a focus on intermediates, transition states and competing reaction pathways. My research with Dr Xiaotai Wang has involved two Summer Undergraduate Research Fellowship (SURF) projects on nickel-mediated coupling and cyclisation, alongside related cobalt-system calculations.
 
 I am interested in how coordination environments and ligand structures influence reactivity and selectivity, and in developing computational tools that make electronic-structure workflows easier to use and inspect.
 
@@ -34,6 +34,16 @@ I am interested in how coordination environments and ligand structures influence
 **Scientific software** · Local Gaussian-output analysis with explicit energy references and interactive 2D and 3D reaction profiles.
 
 [Research projects]({{ '/research/' | relative_url }}) · [Software]({{ '/software/' | relative_url }}) · [CV]({{ '/cv/' | relative_url }})
+
+## Teaching and Outreach
+
+At XJTLU's Chemistry Society, I served as president in my second year and head of planning in my third year. I helped restart society activities, organised academic and revision talks, and collaborated with other societies to introduce chemistry to students outside the subject.
+
+[Leadership and outreach experience]({{ '/cv/#leadership-and-outreach' | relative_url }})
+
+## Research Outlook
+
+I would like to move from interpreting catalytic mechanisms towards computational catalyst design and property prediction. My longer-term interests include functional materials, such as semiconductors, high-performance polymers and metal-alloy catalysts.
 
 ## Current Status
 
