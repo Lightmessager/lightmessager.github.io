@@ -12,7 +12,7 @@ layout: default
   {% endunless %}
 {% endif %}
 
-<div id="main" role="main">
+<div id="main" role="main" class="{% if page.url == '/' %}site-home{% elsif page.sidebar %}site-with-sidebar{% else %}site-reading{% endif %}">
   {% include sidebar.html %}
 
   <div class="archive">
