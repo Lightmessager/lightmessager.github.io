@@ -64,6 +64,7 @@ html[data-theme="dark"] {
   border-radius: 16px;
 }
 .site-home > .page {
+  display: flow-root;
   background: var(--profile-surface);
   border: 1px solid var(--profile-edge);
   border-radius: 16px;
