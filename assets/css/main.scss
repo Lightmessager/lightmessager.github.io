@@ -37,3 +37,97 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+
+/* Personal lavender presentation, scoped to content layouts. */
+:root {
+  --profile-surface: #ffffff;
+  --profile-edge: #e6ddef;
+}
+html[data-theme="dark"] {
+  --profile-surface: #2b2436;
+  --profile-edge: #493b5c;
+}
+#main.site-reading {
+  max-width: 920px;
+  margin: 2.5rem auto 3.5rem;
+}
+.site-reading > .page,
+.site-reading > .archive {
+  float: none;
+  width: 100%;
+  margin: 0;
+  padding: 2.5rem 3rem;
+  box-sizing: border-box;
+  background: var(--profile-surface);
+  border: 1px solid var(--profile-edge);
+  border-radius: 16px;
+}
+.site-home > .page {
+  background: var(--profile-surface);
+  border: 1px solid var(--profile-edge);
+  border-radius: 16px;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.site-reading .page__title,
+.site-home .page__title {
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  margin-bottom: 1.5rem;
+  overflow-wrap: anywhere;
+}
+.site-reading .page__content,
+.site-home .page__content,
+.site-reading .archive {
+  line-height: 1.75;
+  overflow-wrap: break-word;
+}
+.site-reading .page__content h2,
+.site-home .page__content h2 {
+  margin-top: 2.25rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--profile-edge);
+  line-height: 1.35;
+}
+.site-reading .page__content h3,
+.site-home .page__content h3 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.65rem;
+  line-height: 1.4;
+}
+.site-reading .page__content li,
+.site-home .page__content li {
+  margin-bottom: 0.45rem;
+}
+.site-reading .page__content a,
+.site-home .page__content a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+.site-reading img,
+.site-home img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.site-reading a:focus-visible,
+.site-home a:focus-visible,
+.masthead a:focus-visible {
+  outline: 2px solid var(--global-link-color);
+  outline-offset: 4px;
+}
+.masthead::after { background: var(--profile-edge); }
+.page__footer { border-top: 1px solid var(--profile-edge); }
+@media (max-width: 767px) {
+  #main.site-reading { margin-top: 1.25rem; padding: 0 0.75rem; }
+  .site-reading > .page,
+  .site-reading > .archive,
+  .site-home > .page {
+    padding: 1.4rem 1.15rem;
+    border-radius: 12px;
+  }
+  .site-reading .page__title,
+  .site-home .page__title { font-size: 1.85rem; }
+  .site-reading .page__content h2,
+  .site-home .page__content h2 { margin-top: 1.75rem; }
+}
