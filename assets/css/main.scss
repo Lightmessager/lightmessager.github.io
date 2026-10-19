@@ -53,6 +53,7 @@ html[data-theme="dark"] {
 }
 .site-reading > .page,
 .site-reading > .archive {
+  display: flow-root;
   float: none;
   width: 100%;
   margin: 0;
