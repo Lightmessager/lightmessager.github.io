@@ -104,8 +104,8 @@ html[data-theme="dark"] {
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
 }
-.site-reading img,
-.site-home img {
+.site-reading .page__content img,
+.site-home .page__content img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
