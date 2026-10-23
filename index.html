@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Yixuan Fan · Computational Organometallic Chemistry</title>
+<meta name="description" content="Yixuan Fan, BSc Applied Chemistry student at XJTLU. DFT, reaction mechanisms and catalysis; applying for 2027 PhD entry in computational chemistry.">
+<meta property="og:title" content="Yixuan Fan · Computational Organometallic Chemistry">
+<meta property="og:description" content="DFT, reaction mechanisms, transition states and catalysis.">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon.ico" sizes="any">
+<link rel="manifest" href="/images/manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<header class="nav"><div class="wrap">
+  <a class="brand" href="/">Yixuan<span>.</span>Fan</a>
+  <nav><ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#software">Software</a></li>
+    <li><a href="#cv">CV</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><button class="theme-btn" id="theme" aria-label="Toggle colour theme">☾</button></li>
+  </ul></nav>
+</div></header>
+
+<main>
+<div class="hero">
+  <canvas id="mol" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">BSc Applied Chemistry · XJTLU · Class of 2027</div>
+      <h1>Understanding catalysts, <em>one transition state</em> at a time.</h1>
+      <p class="lede">I use density functional theory to study organometallic reaction mechanisms: intermediates, transition states and the competing pathways that decide selectivity. I also build tools that make electronic-structure workflows easier to inspect.</p>
+      <div class="tags"><span class="tag">DFT</span><span class="tag">Reaction mechanisms</span><span class="tag">Transition states</span><span class="tag">Catalysis</span></div>
+      <div class="btns">
+        <a class="btn primary" href="#research">Explore research</a>
+        <a class="btn" href="#cv">View CV</a>
+        <a class="btn" href="mailto:Yixuan.Fan23@student.xjtlu.edu.cn">Email me</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="/images/profile.jpg" alt="Portrait of Yixuan Fan" width="480" height="640">
+      <div class="badge"><b>PhD 2027</b>Computational chemistry applicant</div>
+    </div>
+  </div>
+</div>
+
+<section id="about"><div class="wrap">
+  <div class="sec-head reveal"><div class="eyebrow">01 · About</div><h2>From mechanism to design</h2></div>
+  <div class="about-grid">
+    <div class="reveal">
+      <p>I am a fourth-year Applied Chemistry student at Xi'an Jiaotong-Liverpool University in Suzhou. My research with Dr Xiaotai Wang spans two Summer Undergraduate Research Fellowship (SURF) projects on nickel-mediated coupling and cyclisation, plus related cobalt-system calculations.</p>
+      <p>I am interested in how coordination environments and ligand structure shape reactivity and selectivity. I want to move from interpreting catalytic mechanisms towards computational catalyst design and property prediction, with longer-term interest in functional materials such as semiconductors, high-performance polymers and metal-alloy catalysts.</p>
+      <p>Outside chemistry I enjoy fiction and games, including <i>Wuthering Waves</i>, <i>Minecraft</i> and <i>Slay the Spire</i>.</p>
+    </div>
+    <div class="facts reveal">
+      <div><span>Institution</span><b>XJTLU, Suzhou</b></div>
+      <div><span>Degree</span><b>BSc Applied Chemistry</b></div>
+      <div><span>Supervisor</span><b>Dr Xiaotai Wang</b></div>
+      <div><span>Methods</span><b>Gaussian09 · DFT</b></div>
+      <div><span>Status</span><b>Applying for 2027 PhD</b></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="research" class="alt"><div class="wrap">
+  <div class="sec-head reveal"><div class="eyebrow">02 · Research</div><h2>Mapping catalytic pathways</h2>
+    <p>Project summaries describe my contributions without reporting unpublished structures or numerical results.</p></div>
+  <div class="cards">
+    <a class="card reveal" href="/portfolio/surf-2025-26/">
+      <figure><img src="/images/research/cyclisation-workflow.svg" alt="" loading="lazy"></figure>
+      <div class="meta">SURF 2025–26</div>
+      <h3>Ni-Catalysed Five-Membered Cyclisation</h3>
+      <p>Transition-state searches and mechanistic diagnosis of a difficult reductive-elimination step, including inspection of the nickel coordination environment.</p>
+      <span class="go">Read project</span>
+    </a>
+    <a class="card reveal" href="/portfolio/surf-2024-25/">
+      <figure><img src="/images/research/coupling-pathways.svg" alt="" loading="lazy"></figure>
+      <div class="meta">SURF 2024–25</div>
+      <h3>Ni/Zn Reductive Cross-Electrophile Coupling</h3>
+      <p>A team comparison of oxidative-addition, single-electron-transfer and concerted pathways for coupling heteroaryl bromides with tertiary alkyl halides.</p>
+      <span class="go">Read project</span>
+    </a>
+  </div>
+  <div class="panel reveal" style="margin-top:22px">
+    <div>
+      <div class="eyebrow">Presentations</div>
+      <h3>SURF project poster</h3>
+      <p style="color:var(--muted);margin-top:10px">I wrote most of the poster text and completed its typesetting. No journal publications are listed at present.</p>
+      <a class="btn" href="/files/poster_SURF2025.png">View full poster</a>
+    </div>
+  </div>
+</div></section>
+
+<section id="software"><div class="wrap">
+  <div class="sec-head reveal"><div class="eyebrow">03 · Software</div><h2>Tools for auditable energetics</h2></div>
+  <div class="card wide reveal" style="cursor:default">
+    <div>
+      <div>
+        <div class="meta">Scientific software · Python + Qt</div>
+        <h3>GaussianReadPro</h3>
+        <p style="color:var(--muted)">A local desktop workbench for reading Gaussian output files and building reaction energy profiles whose every number can be traced back to its source job.</p>
+        <ul class="feat">
+          <li><b>Import and inspect:</b> batch-read log files and trace energies to source jobs.</li>
+          <li><b>Compare pathways:</b> relative-energy expressions, explicit references, interactive 2D and 3D profiles.</li>
+          <li><b>Save and share:</b> restore projects; export images, standalone HTML, tables and source audits.</li>
+          <li><b>Work locally:</b> Chinese and English interface, charts bundled for offline use.</li>
+        </ul>
+        <div class="btns">
+          <a class="btn primary" href="https://github.com/Lightmessager/Gaussian09d-log-reader-Pro/releases/latest">Download for Windows</a>
+          <a class="btn" href="/portfolio/gaussian-log-reader-pro/">Details</a>
+          <a class="btn" href="https://github.com/Lightmessager/Gaussian09d-log-reader-Pro">Source</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="reveal" style="margin-top:20px;color:var(--muted);font-size:.93rem">Also: an <a href="https://github.com/Lightmessager/Gaussian09D-Energy-Analysis-From-Log-Files-">earlier Gaussian09 energy extractor</a> (SCF energies and Gibbs corrections to Excel) and <a href="https://github.com/Lightmessager/NewLeaf">NewLeaf</a>, a Ren'Py project resource repository. <a href="https://github.com/Lightmessager?tab=repositories">All repositories →</a></p>
+</div></section>
+
+<section id="cv" class="alt"><div class="wrap">
+  <div class="sec-head reveal"><div class="eyebrow">04 · Curriculum vitae</div><h2>Education, experience and outreach</h2></div>
+  <div class="tl">
+    <div class="tl-item reveal"><div class="when">Sep 2023 – Jun 2027 (expected)</div><h3>BSc Applied Chemistry</h3><div class="sub">Xi'an Jiaotong-Liverpool University, Suzhou, China</div>
+      <ul><li>Foundations in organic, inorganic and coordination chemistry and group theory, with an interest in linking structure, orbital descriptions and reaction mechanisms.</li></ul></div>
+    <div class="tl-item reveal"><div class="when">SURF 2025–26</div><h3>Ni-Catalysed Five-Membered Cyclisation</h3><div class="sub">Supervisor: Dr Xiaotai Wang</div>
+      <ul><li>Carried out most transition-state searches for the five-membered non-conjugated system.</li><li>Explored about 30 bond-length and conformational adjustments for a difficult reductive-elimination step.</li><li>Examined the Ni coordination environment and discussed a CO-assisted alternative as a hypothesis.</li><li>Wrote most of the poster text and completed its typesetting.</li></ul></div>
+    <div class="tl-item reveal"><div class="when">SURF 2024–25</div><h3>Ni/Zn Reductive Cross-Electrophile Coupling</h3><div class="sub">Dr Xiaotai Wang and Yanran Yang</div>
+      <ul><li>Compared oxidative-addition, SET and concerted pathways in a team investigation.</li><li>Model preparation, optimisation, TS searches, energetic cycles, and reaction-energy plots.</li><li>Related cobalt-system calculations with constrained optimisations.</li><li>Learned to troubleshoot methyl-group oscillation and refine TS starting geometries.</li></ul></div>
+    <div class="tl-item reveal"><div class="when">Years 2 and 3</div><h3>Chemistry Society, XJTLU</h3><div class="sub">President (Year 2) · Head of Planning (Year 3)</div>
+      <ul><li>Helped restart society activities and recruit a new organising team.</li><li>Organised academic and revision talks and chemistry-themed tabletop activities.</li><li>Collaborated with the Physics and Mathematics societies and the Robotics Society (GMASTER) on outreach.</li><li>Prepared teaching on crystal structures, organic mechanisms and learning strategies.</li></ul></div>
+  </div>
+  <div class="two" style="margin-top:36px">
+    <div class="panel reveal"><h3>Skills</h3>
+      <div class="skill"><b>Electronic structure</b><span>Gaussian09, DFT, geometry and constrained optimisation, single points, TS searches</span></div>
+      <div class="skill"><b>Mechanistic analysis</b><span>Pathway comparison, energetic cycles, coordination environments, reaction-energy profiles</span></div>
+      <div class="skill"><b>Scientific computing</b><span>Python, AI-assisted tool development, batch processing of Gaussian outputs</span></div>
+      <div class="skill"><b>Theory</b><span>Organic mechanisms, coordination chemistry, group theory; exposure to molecular dynamics</span></div>
+    </div>
+    <div class="panel reveal"><h3>Languages</h3>
+      <div class="skill"><b>Chinese</b><span>Native</span></div>
+      <div class="skill"><b>English · IELTS 7.0 / 9.0</b></div>
+      <div class="ielts"><div><b>7.5</b>Listening</div><div><b>8.0</b>Reading</div><div><b>6.5</b>Writing</div><div><b>6.0</b>Speaking</div></div>
+      <p style="color:var(--muted);font-size:.93rem;margin:18px 0 0">I learn through derivation, first-principles reasoning and discussion; explaining ideas to others is how I check my own understanding.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap reveal">
+  <div class="eyebrow">05 · Contact</div>
+  <h2>Let's talk chemistry.</h2>
+  <p>I am preparing applications for 2027 PhD entry in computational chemistry and would be glad to hear from prospective supervisors and collaborators.</p>
+  <div class="btns">
+    <a class="btn primary" href="mailto:Yixuan.Fan23@student.xjtlu.edu.cn">Yixuan.Fan23@student.xjtlu.edu.cn</a>
+    <a class="btn" href="https://github.com/Lightmessager">GitHub</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Yixuan Fan · Suzhou, China · Updated October 2026</div></footer>
+<script src="/assets/main.js"></script>
+</body>
+</html>
