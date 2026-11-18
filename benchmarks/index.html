@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI benchmarks in computational chemistry · Yixuan Fan</title>
+<meta name="description" content="Blind nickel-complex benchmarks for geometry prediction, ligand dissociation and energy ranking.">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap"><a class="brand" href="/">Yixuan Fan</a><nav aria-label="Main navigation"><a href="/#research">Research</a><a href="/benchmarks/">AI benchmarks</a><a href="/#software">Software</a><a href="/cv/">CV</a></nav></div></header>
+<main id="main" class="wrap article">
+
+<p class="byline">Research note · 18 November 2026</p>
+<h1>What can AI infer from a nickel complex’s geometry?</h1>
+<p>I designed three tasks that ask for different kinds of chemical judgement. In the first two, a model proposes atomic coordinates before an independent single-point calculation scores them. In the third, the model receives coordinates and predicts an energy ordering. The results below describe individual runs on this family of nickel complexes.</p>
+<h2>Test 1 · Predict a relaxed geometry</h2>
+<p>Starting from a seed structure, the model constructed a candidate using geometric operations. I evaluated its submitted coordinates with a gas-phase ORCA B97-3c single-point calculation. The energy gap measures how the candidate compares with the historical reference geometry under that scoring method.</p>
+<table><caption>GPT-6.2 Astra submissions on the same complex</caption><thead><tr><th scope="col">Reasoning setting</th><th scope="col">Energy above reference (kcal/mol)</th></tr></thead><tbody><tr><th scope="row">xhigh</th><td>5.37</td></tr><tr><th scope="row">Max</th><td>3.40</td></tr></tbody></table>
+<p>Each setting contributed one geometry. The search strategies differed, and a single-point score leaves the stationary-point character of both candidates open.</p>
+<h3>Does a molecular viewer help?</h3>
+<p>In a separate experiment, GPT-6.1 Sol Max made one prediction under each of three viewing conditions for the same 99-atom seed. After alignment with the reference, all-atom RMSD was 1.046 Å without tools, 2.335 Å with the ball-and-stick viewer, and 1.070 Å with added orbital schematics. The seed itself was 1.105 Å from the reference.</p>
+<p>The ball-and-stick submission placed one P–Ni–O angle within 0.4° of its reference value while introducing the largest error across the molecule. This is why the benchmark records local coordination and whole-structure agreement separately.</p>
+<h2>Test 2 · Predict a ligand-dissociation product</h2>
+<p>The model had to choose a departing ligand and supply coordinates for the remaining complex. GPT-6.2 Astra Max proposed phosphine dissociation with CO retained. Its 57-atom product scored <strong>4.91 kcal/mol above the reference for that branch</strong> at gas-phase B97-3c.</p>
+<p>The alternative dissociation branch has a different molecular composition. Each product therefore needs its own reference. This test evaluates a proposed product geometry and leaves the relative rates of dissociation unresolved.</p>
+<h2>Test 4 · Rank structures from coordinates</h2>
+<p>Models ranked 17 candidate structures. Historical ORCA single-point energies were available for 13, giving 78 scorable pairs. A correctly ordered pair earned one point and a tie earned half a point.</p>
+<table><caption>Selected runs on the original 17-candidate task</caption><thead><tr><th scope="col">Model and setting</th><th scope="col">Pairwise score</th><th scope="col">Selected lowest scored structure?</th></tr></thead><tbody>
+<tr><th scope="row">GPT-6.2 Astra · xhigh</th><td>91.67%</td><td>Yes</td></tr>
+<tr><th scope="row">GPT-6.2 Sol · xhigh</th><td>89.10%</td><td>No</td></tr>
+<tr><th scope="row">GPT-6.2 Sol · Max</th><td>87.82%</td><td>No</td></tr>
+<tr><th scope="row">GPT-6.2 Astra · Max</th><td>86.54%</td><td>No</td></tr>
+</tbody></table>
+<p>Models could order many pairs correctly and still miss the lowest-energy candidate. These pairs share structures, and the task was reused. Eight reference energies had raw-output support and five were traceable only to historical reports.</p>
+<p>Two additional owner-supplied submissions, Claude Fable 5.2 and Claude Opus 5.5 (High), scored 87.18% and 73.72% respectively. Fable selected the lowest scored structure. Only final responses were available for these two submissions, and both reported seeing directory-name hints.</p>
+<h3>Revised protocol</h3><p>The Refined-12 edition removes four unscored entries and one near-duplicate. It requires a strict ordering of 12 candidates, giving 66 pairs. The scores above belong to the original edition.</p>
+<h2>Benchmark tools</h2>
+<p><strong>Gaussian Bench</strong> prepares geometry-prediction prompts from molecular structures and compares submissions with private references using explicit atom mappings. <strong>Molkit</strong> supports controlled tool-access experiments by exposing distances, angles and ligand orientation through Python and a molecular viewer.</p>
+</main>
+<footer><div class="wrap">Yixuan Fan · Xi’an Jiaotong-Liverpool University · Suzhou, China</div></footer>
+</body></html>
