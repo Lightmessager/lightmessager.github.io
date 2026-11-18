@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI benchmarks in computational chemistry · Yixuan Fan</title>
-<meta name="description" content="Blind nickel-complex benchmarks for geometry prediction, ligand dissociation and energy ranking.">
+<meta name="description" content="Nickel-complex benchmarks for geometry prediction, ligand dissociation and energy ranking.">
 <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/style.css">
 </head>
@@ -32,14 +32,15 @@
 <p>The alternative dissociation branch has a different molecular composition. Each product therefore needs its own reference. This test evaluates a proposed product geometry and leaves the relative rates of dissociation unresolved.</p>
 <h2>Test 4 · Rank structures from coordinates</h2>
 <p>Models ranked 17 candidate structures. Historical ORCA single-point energies were available for 13, giving 78 scorable pairs. A correctly ordered pair earned one point and a tie earned half a point.</p>
-<table><caption>Selected runs on the original 17-candidate task</caption><thead><tr><th scope="col">Model and setting</th><th scope="col">Pairwise score</th><th scope="col">Selected lowest scored structure?</th></tr></thead><tbody>
+<p>The four GPT-6.2 runs in the table used a controlled blind protocol. Each started in a fresh conversation with the same prompt and identical coordinates in a separate input directory. The recorded tool traces showed no access to the answer key or energy calculations.</p>
+<table><caption>Controlled GPT-6.2 runs on the original 17-candidate task</caption><thead><tr><th scope="col">Model and setting</th><th scope="col">Pairwise score</th><th scope="col">Selected the lowest-energy structure among the 13 scored?</th></tr></thead><tbody>
 <tr><th scope="row">GPT-6.2 Astra · xhigh</th><td>91.67%</td><td>Yes</td></tr>
 <tr><th scope="row">GPT-6.2 Sol · xhigh</th><td>89.10%</td><td>No</td></tr>
 <tr><th scope="row">GPT-6.2 Sol · Max</th><td>87.82%</td><td>No</td></tr>
 <tr><th scope="row">GPT-6.2 Astra · Max</th><td>86.54%</td><td>No</td></tr>
 </tbody></table>
-<p>Models could order many pairs correctly and still miss the lowest-energy candidate. These pairs share structures, and the task was reused. Eight reference energies had raw-output support and five were traceable only to historical reports.</p>
-<p>Two additional owner-supplied submissions, Claude Fable 5.2 and Claude Opus 5.5 (High), scored 87.18% and 73.72% respectively. Fable selected the lowest scored structure. Only final responses were available for these two submissions, and both reported seeing directory-name hints.</p>
+<p>Models could order many pairs correctly and still miss the lowest-energy structure among the 13 scored candidates. These pairs share structures, and the task was reused. Eight reference energies had raw-output support and five were traceable only to historical reports.</p>
+<p>Two additional owner-supplied submissions, Claude Fable 5.2 and Claude Opus 5.5 (High), scored 87.18% and 73.72% respectively. Fable selected the lowest-energy structure among the 13 scored candidates. Only final responses were available for these two submissions, and both reported seeing directory-name hints.</p>
 <h3>Revised protocol</h3><p>The Refined-12 edition removes four unscored entries and one near-duplicate. It requires a strict ordering of 12 candidates, giving 66 pairs. The scores above belong to the original edition.</p>
 <h2>Benchmark tools</h2>
 <p><strong>Gaussian Bench</strong> prepares geometry-prediction prompts from molecular structures and compares submissions with private references using explicit atom mappings. <strong>Molkit</strong> supports controlled tool-access experiments by exposing distances, angles and ligand orientation through Python and a molecular viewer.</p>
