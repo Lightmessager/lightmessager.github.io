@@ -15,6 +15,11 @@
 <p class="byline">Research note · 18 November 2026</p>
 <h1>What can AI infer from a nickel complex’s geometry?</h1>
 <p>I designed three tasks that ask for different kinds of chemical judgement. In the first two, a model proposes atomic coordinates before an independent single-point calculation scores them. In the third, the model receives coordinates and predicts an energy ordering. The results below describe individual runs on this family of nickel complexes.</p>
+<h2>Research reports</h2><div class="reports">
+<a href="/files/reports/geometry-tools.pdf"><img src="/images/research/geometry-tools.png" alt="" loading="lazy"><span><small>Test 1 · PDF · English</small><strong>Geometry prediction &amp; molecular tools</strong></span></a>
+<a href="/files/reports/dissociation.pdf"><img src="/images/research/dissociation.png" alt="" loading="lazy"><span><small>Test 2 · PDF · 中文</small><strong>Ligand dissociation &amp; product scoring</strong></span></a>
+<a href="/files/reports/ranking-and-dissociation.html"><span class="minichart" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span><small>Tests 4 &amp; 2 · Interactive</small><strong>Structure ranking &amp; dissociation</strong></span></a>
+</div>
 <h2>Test 1 · Predict a relaxed geometry</h2>
 <p>Starting from a seed structure, the model constructed a candidate using geometric operations. I evaluated its submitted coordinates with a gas-phase ORCA B97-3c single-point calculation. The energy gap measures how the candidate compares with the historical reference geometry under that scoring method.</p>
 <table><caption>GPT-6.2 Astra submissions on the same complex</caption><thead><tr><th scope="col">Reasoning setting</th><th scope="col">Energy above reference (kcal/mol)</th></tr></thead><tbody><tr><th scope="row">xhigh</th><td>5.37</td></tr><tr><th scope="row">Max</th><td>3.40</td></tr></tbody></table>
